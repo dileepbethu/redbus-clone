@@ -88,5 +88,5 @@ API runs at: http://localhost:5001 or your backend port
 - Filter by time, price, rating
 
 ### 🙌 Author
-Made with ❤️ by Bethu Dilip Chandu
+Made with ❤️ by Bethu Dilip
 
