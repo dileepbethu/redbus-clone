@@ -28,24 +28,28 @@ A full-stack RedBus clone built with the MERN (MongoDB, Express.js, React.js, No
 - Bcrypt for password hashing
 - CORS for secure API calls
 
-## 📂 Folder Structure
+## 📁 Project Structure
 
+```bash
 redbus-clone/
 │
-├── backend/
-│ ├── models/ # Mongoose models
-│ ├── routes/ # Auth & Booking routes
-│ └── server.js # Express app entry point
+├── backend/                  # Express backend for API & MongoDB
+│   ├── models/               # Mongoose schemas (e.g., User.js, Booking.js)
+│   ├── routes/               # Route handlers (e.g., auth.js, bookings.js)
+│   └── server.js             # Backend entry point and server setup
 │
-├── src/
-│ ├── components/ # Header, SeatSelector, etc.
-│ ├── context/ # AuthContext for global state
-│ ├── pages/ # Login, Signup, BookingConfirmation
-│ ├── data/ # Sample bus data
-│ └── App.jsx # Main app with routing
+├── src/                      # React frontend
+│   ├── components/           # Reusable UI components (Header, SeatSelector, etc.)
+│   ├── context/              # Global state using AuthContext
+│   ├── pages/                # Page components (Login, Signup, BookingConfirmation)
+│   ├── data/                 # Static data (e.g., busData.js)
+│   └── App.jsx               # Root component with routing logic
 │
-├── .env # Environment variables (e.g., MONGO_URI)
-├── package.json # Project metadata
+├── .env                      # Environment variables (e.g., MongoDB URI)
+├── package.json              # NPM project configuration (frontend or full monorepo)
+├── README.md                 # Project documentation
+└── vite.config.js            # Vite configuration for frontend
+```
 
 ## 🌐 Running the App Locally
 
