@@ -23,6 +23,6 @@ app.use("/api/bookings", bookingRoutes);
 app.use("/api/auth", authRoutes);
 
 // Start server
-app.listen(5001, () => {
-  console.log("Server running on http://localhost:5001");
+app.listen(process.env.PORT || 5001, () => {
+  console.log("Server is running...");
 });
