@@ -6,14 +6,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": " https://github.com/dileepbethu/redbus-clone/tree/main/backend"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
