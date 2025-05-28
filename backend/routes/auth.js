@@ -19,7 +19,8 @@ router.post("/signup", async (req, res) => {
   }
 });
 
-router.post("/login", async (req, res) => {
+router.get("/auth/login", async (req, res) => {
+  res.status(201).json({ msg: "User created", user: newUser });
   const { email, password } = req.body;
   try {
     const user = await User.findOne({ email });
