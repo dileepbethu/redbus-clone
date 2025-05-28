@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "./context/AuthContext";
+console.log("API =", import.meta.env.VITE_API_BASE_URL);
+
 
 const Login = () => {
   const [form, setForm] = useState({ email: "", password: "" });
@@ -12,7 +14,7 @@ const Login = () => {
 
 const handleSubmit = async () => {
   try {
-    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/auth/login`, {
+    const res = await fetch(`https://redbus-clone-3.onrender.com/api/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
