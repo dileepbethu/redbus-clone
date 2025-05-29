@@ -2,6 +2,7 @@
 
 A full-stack RedBus clone built with the MERN (MongoDB, Express.js, React.js, Node.js) stack. Users can sign up, log in, search for buses, select seats, enter passenger details, and confirm bookings with a downloadable ticket.
 
+
 ## 🚀 Features
 
 - ✅ User Authentication (Signup/Login/Logout)
@@ -12,6 +13,8 @@ A full-stack RedBus clone built with the MERN (MongoDB, Express.js, React.js, No
 - 🖨️ Downloadable/Printable Ticket
 - 🔒 AuthContext for Global State Management
 - 🌐 Responsive UI with Bootstrap
+## live DEMO
+https://moonlit-kringle-d7ae4e.netlify.app/
 
 ## 🛠️ Tech Stack
 
