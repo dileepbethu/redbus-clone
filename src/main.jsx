@@ -7,7 +7,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter base="/redbus-clone"> {/* ✅ Wrap everything */}
+  <BrowserRouter basename="/redbus-clone"> {/* ✅ Wrap everything */}
     <AuthProvider>
       <App />
     </AuthProvider>
