@@ -1,25 +1,10 @@
-const express = require("express");
-const Booking = require("../models/booking")
+// backend/routes/bookings.js
+const router = require('express').Router();
 
-const router = express.Router();
+router.get('/', (req, res) => {
+  res.json({ msg: 'Bookings route working' });
+});
 
-// POST /api/bookings
-router.post("/", async (req, res) => {
-  try {
-    const booking = new Booking(req.body);
-    await booking.save();
-    res.status(201).json({ message: "Booking saved successfully!" });
-  } catch (error) {
-    res.status(500).json({ error: "Failed to save booking" });
-  }
-});
-router.get("/:userId", async (req, res) => {
-  try {
-    const bookings = await Booking.find({ user: req.params.userId });
-    res.json(bookings);
-  } catch (error) {
-    res.status(500).json({ error: "Failed to get bookings" });
-  }
-});
 module.exports = router;
+
 
